@@ -1,167 +1,10 @@
 import React from 'react'
 import LayOut from '../../layouts/layout'
+
 function Profile (){
     return(
         <LayOut>
-             <div id="search" className="search_section">
-            <h2>Search</h2>
-            <form method="post">
-                <input type="text" placeholder="Search"/>
-            </form>
-            <div className="find">
-                <div className="desc">
-                    <h4>Recent</h4>
-                    <p><a href="#">Clear all</a></p>
-                </div>
-                <div className="account">
-                    <div className="cart">
-                        <div>
-                            <div className="img">
-                                <img src="./assets/images/profile_img.jpg" alt=""/>
-                            </div>
-                            <div className="info">
-                                <p className="name">Zineb_essoussi</p>
-                                <p className="second_name">Zim Ess</p>
-                            </div>
-                        </div>
-                        <div className="clear">
-                            <a href="#">X</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div id="notification" className="notification_section">
-            <h2>Notifications</h2>
-            <div className="notifications">
-                <div className="notif follow_notif">
-                    <div className="cart">
-                        <div>
-                            <div className="img">
-                                <img src="./assets/images/profile_img.jpg" alt=""/>
-                            </div>
-                            <div className="info">
-                                <p className="name">
-                                    Zineb_essoussi
-                                    <span className="desc">started following you.</span>
-                                    <span className="time">2h</span>
-                                </p>
-
-                            </div>
-                        </div>
-                        <div className="follow_you">
-                            <button className="follow_text">Follow</button>
-                        </div>
-                    </div>
-                </div>
-                <div className="notif follow_notif">
-                    <div className="cart">
-                        <div>
-                            <div className="img">
-                                <img src="./assets/images/profile_img.jpg" alt=""/>
-                            </div>
-                            <div className="info">
-                                <p className="name">
-                                    Zineb_essoussi
-                                    <span className="desc">started following you.</span>
-                                    <span className="time">2h</span>
-                                </p>
-
-                            </div>
-                        </div>
-                        <div className="follow_you">
-                            <button className="follow_text">Follow</button>
-                        </div>
-                    </div>
-                </div>
-                <div className="notif story_notif">
-                    <div className="cart">
-                        <div>
-                            <div className="img">
-                                <img src="./assets/images/profile_img.jpg" alt=""/>
-                            </div>
-                            <div className="info">
-                                <div className="info">
-                                    <p className="name">
-                                        Zineb_essoussi
-                                        <span className="desc">liked your story.</span>
-                                        <span className="time">2d</span>
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div className="story_like">
-                            <img src="./assets/images/img2.jpg" alt=""/>
-                        </div>
-                    </div>
-                </div>
-                <div className="notif follow_notif">
-                    <div className="cart">
-                        <div>
-                            <div className="img">
-                                <img src="./assets/images/profile_img.jpg" alt=""/>
-                            </div>
-                            <div className="info">
-                                <p className="name">
-                                    Zineb_essoussi
-                                    <span className="desc">started following you.</span>
-                                    <span className="time">2h</span>
-                                </p>
-
-                            </div>
-                        </div>
-                        <div className="follow_you">
-                            <button className="follow_text">Follow</button>
-                        </div>
-                    </div>
-                </div>
-                <div className="notif story_notif">
-                    <div className="cart">
-                        <div>
-                            <div className="img">
-                                <img src="./assets/images/profile_img.jpg" alt=""/>
-                            </div>
-                            <div className="info">
-                                <div className="info">
-                                    <p className="name">
-                                        Zineb_essoussi
-                                        <span className="desc">liked your story.</span>
-                                        <span className="time">2d</span>
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div className="story_like">
-                            <img src="./assets/images/img2.jpg" alt=""/>
-                        </div>
-                    </div>
-                </div>
-                <div className="notif follow_notif">
-                    <div className="cart">
-                        <div>
-                            <div className="img">
-                                <img src="./assets/images/profile_img.jpg" alt=""/>
-                            </div>
-                            <div className="info">
-                                <p className="name">
-                                    Zineb_essoussi
-                                    <span className="desc">started following you.</span>
-                                    <span className="time">2h</span>
-                                </p>
-
-                            </div>
-                        </div>
-                        <div className="follow_you">
-                            <button className="follow_text">Follow</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-       
+           
 
         <div className="profile_container">
             <div className="profile_info">
@@ -203,7 +46,7 @@ function Profile (){
                     <p>New</p>
                 </div>
             </div>
-            <hr>
+            <hr/>
             <div className="posts_profile">
                 <ul className="nav-pills w-100 d-flex justify-content-center" id="pills-tab" role="tablist">
                     <li className="nav-item mx-2" role="presentation">

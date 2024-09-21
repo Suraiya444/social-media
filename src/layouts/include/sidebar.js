@@ -1,7 +1,23 @@
 import React from "react";
-import { Link,useLocation } from 'react-router-dom';
+import { useLocation, Link} from 'react-router-dom';
 
 function Sidebar (){
+    const activeMenu = (e)=>{
+        document.querySelectorAll('.submenu').forEach(
+            function(e){
+                e.classList.remove('active');
+            }
+        )
+        const childElement=e.target.parentElement.querySelector('.submenu');
+        if(childElement && childElement.classList.contains('submenu')){
+            childElement.classList.add('active');
+        }
+    }
+
+    const location=useLocation();
+    const isLinkActive=(path)=>{
+        return location.pathname==path ? 'active':"";
+    }
     return(
         <div className="nav_menu">
         <div className="fix_top">
@@ -15,11 +31,8 @@ function Sidebar (){
                     </div>
                     <div className="menu">
                         <ul>
-                            <li>
-                                <a className="active" href="home.html">
-                                    <img src="./assets/images/accueil.png"/>
-                                    <span className="d-none d-lg-block ">Home</span>
-                                </a>
+                            <li onclick={activeMenu}  className={`active ${isLinkActive("/home")}`} >
+                            <Link to={"/"} className={`sidebar-link`} ><img src="./assets/images/accueil.png"/>  <span className="d-none d-lg-block ">Home</span></Link>    
                             </li>
                             <li id="search_icon">
                                 <a href="#">
@@ -33,17 +46,12 @@ function Sidebar (){
                                     <span className="d-none d-lg-block ">Explore</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="./reels.html">
-                                    <img src="./assets/images/video.png"/>
-                                    <span className="d-none d-lg-block ">Reels</span>
-                                </a>
+                            <li onclick={activeMenu}  className={`active ${isLinkActive("/reels")}`} >
+                            <Link to={"/reels"} className={`sidebar-link`} ><img src="./assets/images/video.png"/>  <span className="d-none d-lg-block ">Reels</span></Link>
                             </li>
-                            <li>
-                                <a href="./messages.html">
-                                    <img src="./assets/images/send.png"/>
-                                    <span className="d-none d-lg-block ">Messages</span>
-                                </a>
+                            <li onclick={activeMenu}  className={`active ${isLinkActive("/message")}`} >
+                            <Link to={"/message"} className={`sidebar-link`}><img src="./assets/images/send.png"/><span className="d-none d-lg-block ">Messages</span></Link>
+                              
                             </li>
                             <li className="notification_icon">
                                 <a href="#">
@@ -58,10 +66,11 @@ function Sidebar (){
                                 </a>
     
                             </li>
-                            <li>
+                            <li onclick={activeMenu}  className={`active ${isLinkActive("/profile")}`} >
+                            <Link to={"/profile"} className={`sidebar-link`} >  <img className="circle story" src="./assets/images/profile_img.jpg"/><span className="d-none d-lg-block ">Profile</span> </Link>   
                                 <a href="./profile.html">
-                                    <img className="circle story" src="./assets/images/profile_img.jpg"/>
-                                    <span className="d-none d-lg-block ">Profile</span>
+                                  
+                                    
                                 </a>
                             </li>
                         </ul>
