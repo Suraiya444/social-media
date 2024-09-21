@@ -1,45 +1,40 @@
-import React from 'react'
-import LayOut from '../../layouts/layout'
+import LayOut from '../../layouts/layout';
+import { Link,useNavigate } from 'react-router-dom';
+import { login } from '../../Api/AllApi';
+import React,{useState} from 'react';
 
 function Login(){
+    const navigate = useNavigate();
+    const [inputs, setInputs ] = useState([]);
+    const handleChange = (event) => {
+        const name = event.target.name;
+        const value = event.target.value;
+        setInputs(values =>({...values, [name]: value}))
+    }
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        let check = await login(inputs);
+        if(check){
+            window.location="http://localhost:3000/"
+        }else{
+            alert("Sorry password or email address is wrong!");
+        }
+    }
     return(
         <LayOut>
              <div className="container">
-                <div className="login">
-                    <div className="images d-none d-lg-block">
-                        <div className="frame">
-                            <img src="./assets/images/home-phones.png" alt="picutre frame"/>
-                        </div>
-                        <div className="sliders">
-                            <div id="carouselExampleSlidesOnly" className="carousel slide carousel-fade" data-bs-ride="carousel">
-                                <div className="carousel-inner">
-                                <div className="carousel-item active">
-                                    <img src="./assets/images/screenshot1.png" className="d-block" alt="screenshot1"/>
-                                </div>
-                                <div className="carousel-item">
-                                    <img src="./assets/images/screenshot2.png" className="d-block" alt="screenshot2"/>
-                                </div>
-                                <div className="carousel-item">
-                                    <img src="./assets/images/screenshot3.png" className="d-block" alt="screenshot3"/>
-                                </div>
-                                <div className="carousel-item">
-                                    <img src="./assets/images/screenshot4.png" className="d-block" alt="screenshot4"/>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
+                <div className="login"> 
                     <div className="content">
                         <div className="log-on border_insc">
                             <div className="logo">
                                 <img src="./assets/images/logo.png" alt="Instagram logo"/>
                             </div>
-                            <form>
+                            <form  onSubmit={handleSubmit}>
                                 <div>
-                                    <input type="email" name="email" id="emai" placeholder="e-mail"/>
+                                    <input type="email" name="email" id="emai" placeholder="e-mail"  onChange={handleChange}/>
                                 </div>
                                 <div>
-                                    <input type="password" name="password" id="password" placeholder="password"/>
+                                    <input type="password" name="password" id="password" placeholder="password" onChange={handleChange}/>
                                 </div>
                                 
                             </form>
@@ -69,8 +64,7 @@ function Login(){
                         </div>
                         <div className="sing-up border_insc">
                             <p>
-                                Don't have an account? 
-                                <a href="./sign_up.html">Sign up</a>
+                            <Link to="/register">Don't have an account?</Link>
                             </p>
                         </div>
                         

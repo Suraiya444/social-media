@@ -4,7 +4,6 @@ import LayOut from '../../layouts/layout'
 function Profile (){
     return(
         <LayOut>
-           
 
         <div className="profile_container">
             <div className="profile_info">
