@@ -152,7 +152,7 @@ function Home(){
                                             </div>
                                         <img src="./assets/imagesshow_more.png" alt="" style={{height:'1rem', marginRight:'2px'}}/>
                                     </div>
-                                    <img src="https://i.ibb.co/Jqh3rHv/img1.jpg"alt=" "  className="post-img"/>
+                                    <img src="https://i.ibb.co/2ZxBFVp/img2.jpg"alt=" "  className="post-img"/>
                                         <div  className="post-icons">
                                                 <div  className="post-icons-left">
                                                         <img  className=""src="./assets/images/love.png"  style={{height:'1rem' , marginRight:'0.5rem'}}/>
@@ -178,7 +178,7 @@ function Home(){
                                             </div>
                                         <img src="./assets/imagesshow_more.png" alt="" style={{height:'1rem', marginRight:'2px'}}/>
                                     </div>
-                                    <img src="https://i.ibb.co/Jqh3rHv/img1.jpg"alt=" "  className="post-img"/>
+                                    <img src="https://i.ibb.co/5vQt677/img3.jpg"alt=" "  className="post-img"/>
                                         <div  className="post-icons">
                                                 <div  className="post-icons-left">
                                                         <img  className=""src="./assets/images/love.png"  style={{height:'1rem' , marginRight:'0.5rem'}}/>
@@ -193,9 +193,62 @@ function Home(){
                                                 <p><a  className="gray" href="#">View all 2 comments</a></p>
                                                     <input type="/" placeholder="Add a comments..."/>
                             </div>
+                            <div  className="post">
+                                    <div  className="post-header">
+                                            <div  className="post-info-flex">
+                                                <img src="https://i.ibb.co/gvrfhjL/account9.jpg"alt="  Picture" className="profile-pic"/>
+                                                <p>Zoe</p>
+                                                <ul>
+                                                    <li  className="list-time mt-3">8 hrs</li>
+                                                </ul>
+                                            </div>
+                                        <img src="./assets/imagesshow_more.png" alt="" style={{height:'1rem', marginRight:'2px'}}/>
+                                    </div>
+                                    <img src="https://i.ibb.co/FVVxR6x/img.jpg'"alt=" "  className="post-img"/>
+                                        <div  className="post-icons">
+                                                <div  className="post-icons-left">
+                                                        <img  className=""src="./assets/images/love.png"  style={{height:'1rem' , marginRight:'0.5rem'}}/>
+                                                        <img  src="./assets/images/bubble-chat.png"  style={{height:'1rem' , marginRight:'0.5rem'}}/>
+                                                        <img src="./assets/images/send.png" style={{height:'1rem' , marginRight:'0.5rem'}}/>
+                                                </div>
+                                                    <img  className="not_saved"  src="./assets/images/save-instagram.png" style={{height:'1rem', marginRight:'380px'}}/>
+                                        </div>
+                                                <p  className="likes">100 likes</p>
+                                                <p  className="caption"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium aperiam quod non 
+                                                    minus cumque, recusandae hic soluta harum aut nulla...</p>
+                                                <p><a  className="gray" href="#">View all 2 comments</a></p>
+                                                    <input type="/" placeholder="Add a comments..."/>
+                            </div>
+                            <div  className="post">
+                                    <div  className="post-header">
+                                            <div  className="post-info-flex">
+                                                <img src="https://i.ibb.co/gvrfhjL/account9.jpg"alt="  Picture" className="profile-pic"/>
+                                                <p>Zoe</p>
+                                                <ul>
+                                                    <li  className="list-time mt-3">8 hrs</li>
+                                                </ul>
+                                            </div>
+                                        <img src="./assets/imagesshow_more.png" alt="" style={{height:'1rem', marginRight:'2px'}}/>
+                                    </div>
+                                    <img src="https://i.ibb.co/r7xBR56/img5.jpg"alt=" "  className="post-img"/>
+                                        <div  className="post-icons">
+                                                <div  className="post-icons-left">
+                                                        <img  className=""src="./assets/images/love.png"  style={{height:'1rem' , marginRight:'0.5rem'}}/>
+                                                        <img  src="./assets/images/bubble-chat.png"  style={{height:'1rem' , marginRight:'0.5rem'}}/>
+                                                        <img src="./assets/images/send.png" style={{height:'1rem' , marginRight:'0.5rem'}}/>
+                                                </div>
+                                                    <img  className="not_saved"  src="./assets/images/save-instagram.png" style={{height:'1rem', marginRight:'380px'}}/>
+                                        </div>
+                                                <p  className="likes">100 likes</p>
+                                                <p  className="caption"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium aperiam quod non 
+                                                    minus cumque, recusandae hic soluta harum aut nulla...</p>
+                                                <p><a  className="gray" href="#">View all 2 comments</a></p>
+                                                    <input type="/" placeholder="Add a comments..."/>
+                            </div>
+                            
                         </div>
                 </div>
-                <div className="followers_container">
+                {/* <div className="followers_container">
                     <div>
                         <div className="cart">
                             <div>
@@ -260,13 +313,13 @@ function Home(){
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
                             
             </div>
                 
 
     
-            <div className="modal fade" id="send_message_modal" tabIndex="-1" aria-labelledby="exampleModalLabel"
+            {/* <div className="modal fade" id="send_message_modal" tabIndex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered">
                     <div className="modal-content">
@@ -412,7 +465,7 @@ function Home(){
             </div>
             
         
-        </div>
+        </div> */}
         </LayOut>
     )
 }

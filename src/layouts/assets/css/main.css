@@ -1820,7 +1820,7 @@ width: 30%;
 }
 
 .stories-container {
-width: 50vw;
+width: 60vw;
 display: flex;
 justify-content: center;
 overflow-x: auto;
@@ -1907,25 +1907,25 @@ background-color: whitesmoke;
 }
 
 .profile-pic {
-width: 30px;
-height: 30px;
+width: 45px;
+height: 45px;
 border-radius: 50%;
 object-fit: cover;
 }
 
 .post-info-flex p {
-font-size: 0.7rem;
+font-size: 14px;
 font-weight: 600;
 margin: 0;
 }
 
 .list-time {
-font-size: 0.7rem;
+font-size: 12px;
 margin: 0;
 }
 
 .post-img {
-width: 400px;
+width: 600px;
 height: auto;
 object-fit: cover;
 }

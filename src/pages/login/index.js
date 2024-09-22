@@ -1,4 +1,4 @@
-import LayOut from '../../layouts/layout';
+import AuthLayout from '../../layouts/authlayout';
 import { Link,useNavigate } from 'react-router-dom';
 import { login } from '../../Api/AllApi';
 import React,{useState} from 'react';
@@ -21,7 +21,7 @@ function Login(){
         }
     }
     return(
-        <LayOut>
+        <AuthLayout>
              <div className="container">
                 <div className="login"> 
                     <div className="content">
@@ -37,12 +37,12 @@ function Login(){
                                     <input type="password" name="password" id="password" placeholder="password" onChange={handleChange}/>
                                 </div>
                                 
+                                <button className="log_btn">   Log in </button>
+                               
+                                 
+                                
                             </form>
-                            <a href="./home.html">
-                                <button className="log_btn">
-                                    Log in
-                                </button>
-                            </a>
+                            
                             <div className="other-ways">
                                 <div className="seperator">
                                     <span className="ligne"></span>
@@ -64,14 +64,14 @@ function Login(){
                         </div>
                         <div className="sing-up border_insc">
                             <p>
-                            <Link to="/register">Don't have an account?</Link>
+                            <Link to={"/sign_up"}>Don't have an account?</Link>
                             </p>
                         </div>
                         
                     </div>
                 </div>
     </div>
-        </LayOut>
+        </AuthLayout>
     )
     
 }

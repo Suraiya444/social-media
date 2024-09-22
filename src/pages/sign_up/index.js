@@ -1,5 +1,5 @@
-import React from 'react'
-import LayOut from '../../layouts/layout';
+import AuthLayout from '../../layouts/authlayout';
+import { useState } from "react";
 import { Link,useNavigate } from 'react-router-dom';
 import { register } from '../../Api/AllApi';
  function Sign_up(){
@@ -18,11 +18,13 @@ import { register } from '../../Api/AllApi';
     }
 
     const handleSubmit = async(e) => {
+        
         e.preventDefault();
         await register(inputs);
         navigate('/login')
     }
     return(
+        <AuthLayout>
         <div className="sign_up">
         <div className="content">
             <div className="log-on border_insc">
@@ -42,7 +44,7 @@ import { register } from '../../Api/AllApi';
                     </div>
 
                 </div>
-                <form action="" onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit}>
                     <div>
                         <input type="email" name="email" id="emai" placeholder="email address"  onChange={handleChange}/>
                     </div>
@@ -65,13 +67,9 @@ import { register } from '../../Api/AllApi';
                             <a href="#">Terms, Privacy Policy and Cookies Policy.</a> 
                         </p>
                     </div>
-                    
+                    <button className="log_btn">Sign Up</button>
                 </form>
-                <a href="./home.html">
-                    <button className="log_btn">
-                            Sign Up
-                    </button>
-                </a>
+                   
             </div>
             <div className="sing-in border_insc">
                 <p>
@@ -87,6 +85,7 @@ import { register } from '../../Api/AllApi';
             </div>
         </div>
     </div>
+    </AuthLayout>
     )
  }
  export default Sign_up;

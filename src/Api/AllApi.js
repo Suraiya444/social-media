@@ -6,6 +6,7 @@ const login = async (data) => {
     const LOGIN_ENDPOINT = `http://localhost/social-media/login.php`;
     try{
         let response = await axios.post(LOGIN_ENDPOINT, data);
+        console.log(response)
         if(response.data.jwt){
             localStorage.setItem("access_token", response.data.jwt);
             localStorage.setItem("userdata", response.data.datas);

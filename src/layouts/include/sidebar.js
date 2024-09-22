@@ -40,11 +40,11 @@ function Sidebar (){
                                     <span className="d-none d-lg-block search">Search </span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="./explore.html">
+                            <li onclick={activeMenu}  className={`active ${isLinkActive("/explore")}`}>
+                            <Link to={"/explore"} className={`sidebar-link`} >
                                     <img src="./assets/images/compass.png"/>
                                     <span className="d-none d-lg-block ">Explore</span>
-                                </a>
+                                    </Link> 
                             </li>
                             <li onclick={activeMenu}  className={`active ${isLinkActive("/reels")}`} >
                             <Link to={"/reels"} className={`sidebar-link`} ><img src="./assets/images/video.png"/>  <span className="d-none d-lg-block ">Reels</span></Link>
@@ -275,6 +275,7 @@ function Sidebar (){
                         </div>
                 </div>
          </div> 
+         
     </div> 
     
      )
