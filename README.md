@@ -1,6 +1,6 @@
 # Social Media Clone
 
-![Clone or Carbon Copy of Instagram](https://github.com/Suraiya444/social-media/blob/master/Instagram_icon.png)
+![Clone or Carbon Copy of Instagram](https://github.com/Suraiya444/social-media/blob/master/rsz_1rsz_436.jpg)
 
 ## Overview
 
